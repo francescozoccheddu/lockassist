@@ -1,4 +1,4 @@
-package com.francescozoccheddu.lockassist;
+package francescozoccheddu.lockassist;
 
 import android.app.assist.AssistContent;
 import android.app.assist.AssistStructure;
