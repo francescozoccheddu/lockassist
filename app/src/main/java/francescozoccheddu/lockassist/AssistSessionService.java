@@ -1,4 +1,4 @@
-package com.francescozoccheddu.lockassist;
+package francescozoccheddu.lockassist;
 
 import android.os.Bundle;
 import android.service.voice.VoiceInteractionSession;

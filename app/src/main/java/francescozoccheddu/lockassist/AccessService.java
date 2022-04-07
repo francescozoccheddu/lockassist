@@ -1,4 +1,4 @@
-package com.francescozoccheddu.lockassist;
+package francescozoccheddu.lockassist;
 
 import android.accessibilityservice.AccessibilityService;
 import android.accessibilityservice.AccessibilityServiceInfo;
@@ -44,8 +44,8 @@ public class AccessService extends AccessibilityService {
 
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
-        if (getApplicationContext().getPackageName().equals(event.getPackageName())) {
-            if (AccessService.class.getName().equals(event.getClassName()) && event.getText().contains(ACTION)) {
+        if (getApplicationContext().getPackageName().contentEquals(event.getPackageName())) {
+            if (AccessService.class.getName().contentEquals(event.getClassName()) && event.getText().contains(ACTION)) {
                 lock();
             }
         }
